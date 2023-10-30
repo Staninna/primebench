@@ -1,0 +1,26 @@
+[package]
+name = "prime_bench"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.16.1", features = ["full"] }
+dotenvy = "0.15.7"
+
+# Premature optimization is the root of all evil
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = false
+panic = "abort"
+
+# Program is made for performance so debug is not needed
+[profile.dev]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = false
+panic = "abort"
