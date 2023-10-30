@@ -6,33 +6,33 @@
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/Staninna/primebench.git
-```
+    ```bash
+    git clone https://github.com/Staninna/  primebench.git
+    ```
 
 2. Navigate to the project directory:
 
-```bash
-cd primebench
-```
+    ```bash
+    cd primebench
+    ```
 
 3. Set environment variables:
 
-- `START_N`: The starting number for prime calculations.
-- `MAX_N`: The maximum number for prime calculations.
-- `MIN_THREADS`: The minimum number of threads to use.
-- `MAX_THREADS`: The maximum number of threads to use.
-- `TRIES`: The number of benchmarking tries.
+    - `START_N`: The starting number for prime  calculations.
+    - `MAX_N`: The maximum number for prime calculations.
+    - `MIN_THREADS`: The minimum number of threads to use.
+    - `MAX_THREADS`: The maximum number of threads to use.
+    - `TRIES`: The number of benchmarking tries.
 
-You can set these environment variables in a `.env` file or directly in your shell.
+    You can set these environment variables in a `.env` file or directly in your shell.
 
 4. Build and run the project:
 
-```bash
-cargo run --release
-```
+    ```bash
+    cargo run --release
+    ```
 
-The project will execute multiple benchmarking tries with varying thread counts and output the best configuration.
+    The project will execute multiple benchmarking  tries with varying thread counts and output the  best configuration.
 
 ## Results
 
